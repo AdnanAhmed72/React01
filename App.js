@@ -29,7 +29,7 @@ function App() {
     // console.log('In App.js')
     console.log(newExpense)
     
-    setExpenseList([...expenseList,newExpense])
+    setExpenseList([newExpense,...expenseList])
   }
   return (
     <div>
