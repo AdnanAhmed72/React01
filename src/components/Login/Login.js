@@ -38,7 +38,7 @@ const Login = (props) => {
       console.log('Checking Form Validity');
       setFormIsValid(
       emailState.isValid && passwordState.isValid)
-    }, 2000);
+    }, 500);
     return () =>{
       console.log('CLEANUP')
       clearTimeout(identifier)
@@ -67,7 +67,7 @@ const Login = (props) => {
 
     setFormIsValid(
       event.target.value.trim().length > 3 && emailState.isValid
-      && passwordState.isValid.trim().length > 6
+      && passwordState.isValid.length > 6
     );
   }
 
